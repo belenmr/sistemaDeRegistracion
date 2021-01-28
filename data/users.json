@@ -1,3 +1,11 @@
 [
-    {}
+    {
+        "id": 1,
+        "username": "prueba",
+        "pass": "$2b$12$ryiRL9MVDPcfBB0lGDK2AOrtjJq2ixETOGqdjbdFvXyjETdF8EWpu",
+        "name": "PRUEBA",
+        "surname": "PRUEBA",
+        "email": "prueba@prueba.com",
+        "avatarPath": "images\\users\\avatar-1611817760636.jpg"
+    }
 ]

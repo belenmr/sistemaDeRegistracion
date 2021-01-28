@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+	<%- include('partials/head') %> 
+  
+<body>
+	<div class="container">
+        <form action="" method="POST" enctype="multipart/form-data">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <h2 class="my-5"><%= title %></h2>
+                    <div class="col-12 col-md-6">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Username" name="username">
+                            <label for="floatingInput">Username</label>
+                        </div>
+                    </div>                    
+					
+					<div class="col-12 col-md-6">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Name" name="name">
+                            <label for="floatingInput">Nombre</label>
+                        </div>
+					</div>
+					<div class="col-12 col-md-6">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Surname" name="surname">
+                            <label for="floatingInput">Apellido</label>
+                        </div>
+					</div>
+
+					<div class="col-12 col-md-6">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="email@example.com" name="email">
+                            <label for="floatingInput">Email</label>
+                        </div>
+					</div>
+					
+					<div class="col-12 col-md-6">
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="pass">
+                            <label for="floatingPassword">Contraseña</label>
+                        </div>
+					</div>
+					<div class="col-12 col-md-6">
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="repeatPass">
+                            <label for="floatingPassword">Repetir contraseña</label>
+                        </div>
+					</div>
+
+					<div class="col-12 col-md-6">
+                        <div class="form-floating">
+                            <input type="file" class="form-control" id="floatingPassword" placeholder="avatar.jpg" name="avatar">                            
+                        </div>
+					</div>
+
+					<div class="row justify-content-center text-center">
+						<div class="col-12 col-md-6 my-4">
+							<div class="form-floating">
+								<button class="btn btn-primary" type="submit">Registrarse</button>
+								<a href="/"><button class="btn btn-secondary" type="button">Volver</button></a> 
+								
+							</div>
+						</div>
+					</div>
+                    
+                    <% if (typeof error != 'undefined') { %>
+                        <div class="alert alert-danger">
+                            <span><%= error %> </span>
+                        </div>
+                    <% } %>
+                    
+                </div>
+            </div>
+        </form>
+    </div>
+	
+
+	<%- include('partials/footer')  %>
+
+	<%- include('partials/scripts')  %>
+</body>
+</html>
